@@ -2,20 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Aritmatika Sederhana</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
+  <title>Kalkulator Harga Kopi</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
- 
-  <script src="main.js"></script>
+  <div class="container">
+    <h1>Kalkulator Harga Kopi</h1>
+    
+    <form id="formkopi">
+      <label for="">Harga per Gelas (Rp)</label>
+      <input type="number" name="" id="harga" value="15000"/>
+      <br><br>
+      
+      <label>Juamlah Pesanan</label>
+      <input type="number" name="" id="jumlah" placeholder="Masukan jumlah">
+      <br><br>
+      
+      <label>Diskon (%)</label>
+      <input type="number" name="" id="diskon" value="5" />
+      <br><br>
+      
+      <button type=button onclick="hitung()">Hitung Total</button>
+    </form>
+    
+    <h3 id="hasil"></h3>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
